@@ -1,0 +1,29 @@
+
+
+  <%- include ('partials/header')-%>
+<div class="box" id="heading">
+  <h1>my to-do list</h1>
+
+</div>
+
+
+
+<div class="box">
+ <% items.forEach(function(item){%>
+   <div class="item">
+     <input type="checkbox" name="" value="">
+     <p>
+       <%= item.task %>
+     </p>
+   </div>
+   <%});%>
+   <form class="" action="/" method="post">
+
+     <input type="text" name="itemName" value="" placeholder="Add new task">
+    <button type="submit" name="button">+</button>  <a href="/login">Logout</a>
+   </form>
+
+
+</div>
+
+  <%- include ('partials/footer')-%>
